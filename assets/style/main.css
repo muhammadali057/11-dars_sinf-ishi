@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+body {
+  background-color: dodgerblue;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.contaner {
+  width: 650px;
+  height: 450px;
+  background-color: dodgerblue;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 150px;
+  transform: perspective(900px) rotateY(-35deg);
+}
+
+.box {
+  background-color: white;
+  animation: box 5s infinite;
+}
+
+@keyframes box {
+  25% {
+    background-color: chocolate;
+    box-shadow: 0px 0px 5px 5px red;
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    background-color: darkorange;
+    box-shadow: 0px 0px 5px 5px rgb(201, 113, 6);
+  }
+}/*# sourceMappingURL=main.css.map */
